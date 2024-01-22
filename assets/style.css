@@ -1507,7 +1507,6 @@ blockquote {
 .sub-page-headings{
   color:  #3096e9;
   background-color: white;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 .sub-page-headings h2{
   color:  #3096e9;
@@ -2216,6 +2215,7 @@ div.icon-box h4.title a{
 .table-responsive thead, 
 .table-responsive tr {
   border: 0;
+  text-align: left;
 }
 
 .table-responsive thead tr {
@@ -2223,7 +2223,6 @@ div.icon-box h4.title a{
   color: rgb(255, 255, 255);
   font-size: 20px;
 }
-
 .table-responsive thead th {
   padding: 22px 16px !important;
 }
@@ -2243,3 +2242,32 @@ div.icon-box h4.title a{
 .table-responsive .bi-x-circle-fill {
   color: violet;
 }
+.about .social-links a {
+  font-size: 18px;
+  line-height: 0;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  color: rgba(27, 47, 69, 0.5);
+  margin-right: 10px;
+  transition: 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3096e9;
+  color: #ffffff;
+  border-radius: 50px;
+}
+
+ .head-tasks p {
+  font-size: 22px;
+  font-weight: 500;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  position: relative;
+}
+.head-tasks p i{
+  color: #3096e9;
+}
+
+
