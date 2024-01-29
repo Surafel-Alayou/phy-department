@@ -787,3 +787,34 @@ section {
     border-radius: 50px;
   }
 
+  .skills .logo-box+.logo-box {
+    margin-top: 20px;
+  }
+  
+  .skills .logo-box .logo {
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 72px;
+    height: 72px;
+    border-radius: 6px;
+    transition: 0.5s;
+  }
+
+  .skills .logo-box .title {
+    margin-left: 95px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+
+  .skills .logo-box .meter {
+    margin-left: 25px;
+    line-height: 24px;
+    font-size: 30px;
+    width: 50%;
+
+  }
+  
+  
