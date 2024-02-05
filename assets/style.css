@@ -2636,12 +2636,11 @@ background-color:#66CCFF;
   overflow: hidden;
 }
 
-.news .news-details .title {
+.news .title {
   font-size: 28px;
-  font-weight: 700;
+  font-weight: 500;
   padding: 0;
-  margin: 20px 0 0 0;
-  color: var(--color-secondary);
+  margin: 0 0 30px 0;
 }
 
 .news .news-details .content {
@@ -2925,4 +2924,253 @@ background-color:#66CCFF;
   padding-left: 5px;
   color: rgba(27, 47, 69, 0.8);
   font-size: 14px;
+}
+.phd-research .posts-list article {
+  height: 100%;
+  border-bottom: 1px solid #d6e2ef;
+  padding-bottom: 30px;
+}
+
+.phd-research .posts-list article+article {
+  margin-top: 60px;
+}
+
+.phd-research .posts-list .post-img {
+  max-height: 240px;
+  overflow: hidden;
+}
+
+.phd-research .posts-list .title {
+  font-size: 20px;
+  font-weight: 600;
+  padding: 0;
+  margin: 20px 0 0 0;
+}
+
+.phd-research .posts-list .title a {
+  color: var(--color-primary);
+  transition: 0.3s;
+}
+
+.phd-research .posts-list .title a:hover {
+  color: var(--color-primary);
+}
+
+.phd-research .posts-list .meta-top {
+  margin-top: 20px;
+  color: #467ab3;
+}
+
+.phd-research .posts-list .meta-top ul {
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.phd-research .posts-list .meta-top ul li {
+  margin-left: 20px;
+  font-size: 18px;
+}
+.phd-research .posts-list .meta-top a {
+  color: #467ab3;
+  font-size: 18px;
+  display: inline-block;
+  line-height: 1;
+}
+
+.phd-research .posts-list .content {
+  margin-top: 20px;
+}
+
+.phd-research .posts-list .read-more a {
+  display: inline-block;
+  color: #1f98d1;
+  transition: 0.3s;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.phd-research .posts-list .read-more a:hover {
+  color: var(--color-primary);
+}
+
+.phd-research .sidebar .sidebar-title {
+  font-size: 22px;
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+  color: var(--color-primary);
+}
+
+.phd-research .sidebar .sidebar-item+.sidebar-item {
+  margin-top: 40px;
+}
+.phd-research .sidebar .categories ul {
+  list-style: none;
+  padding: 0;
+}
+
+.phd-research .sidebar .categories ul li+li {
+  padding-top: 10px;
+}
+
+.phd-research .sidebar .categories ul a {
+  color: var(--color-primary);
+  font-size: 15px;
+}
+
+.phd-research .sidebar .categories ul a:hover {
+  color: var(--color-default);
+}
+
+.phd-research .sidebar .categories ul a span {
+  padding-left: 5px;
+  color: rgba(var(--color-default-rgb), 0.4);
+  font-size: 14px;
+}
+.phd-section .accordion-item {
+  border: 0;
+}
+
+.phd-section .accordion-button {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.phd-section .accordion-item:first-of-type .accordion-button {
+  border-radius: 10px;
+}
+
+.phd-section .accordion-button:not(.collapsed) {
+  border-radius: 10px;
+  box-shadow: none;
+  color: var(--primary-color);
+}
+
+.phd-section .accordion-body {
+  color: var(--p-color);
+  font-size: var(--btn-font-size);
+  line-height: 30px;
+}
+.phd-research .sidebar .categories ul a, .phd-research .sidebar .categories ul a span {
+  padding-left: 5px;
+  color: var(--color-primary);
+  font-size: 16px;
+}
+.phd-section button span{
+  color: #3096e9;
+  font-weight: 500;
+}
+.phd-research .post-author img {
+  max-width: 120px;
+  margin-right: 30px;
+}
+
+.phd-research .post-author h4 {
+  font-weight: 600;
+  font-size: 22px;
+  margin-bottom: 0px;
+  padding: 0;
+  color: var(--color-primary);
+}
+
+.phd-research.post-author .social-links {
+  margin: 0 10px 10px 0;
+}
+
+.phd-research .post-author .social-links a {
+  color: rgba(27, 47, 69, 0.5);
+  margin-right: 5px;
+}
+
+.phd-research .post-author p.title {
+  font-style: italic;
+  color: grey;
+  font-weight: 500;
+  margin: 5px 0 10px 0;
+}
+.phd-research .post-author ul li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.phd-research .posts-list h2.title a{
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+  margin: 5px 0 10px 0;
+}
+.list-inline-item {
+  display: inline-block;
+  width: 50px;
+}
+.list-inline-item a img{
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
+  margin: 5px;
+}
+.sidebar .sidebar-item  .sidebar-title {
+  font-size: 22px;
+  font-weight: 400;
+  padding: 0;
+  margin-bottom: 15px;
+  color: var(--color-primary);
+}
+section.history{
+  padding: 40px 0px;
+}
+
+
+section.history .left-content span {
+text-transform: uppercase;
+font-size: 14px;
+letter-spacing: 0.5px;
+}
+
+section.history .left-content h4 {
+  margin-top: 20px;
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  line-height: 40px;
+  margin-bottom: 20px;
+}
+section.history .left-content h4 em {
+  color: #f5a425;
+}
+
+section.history .left-content .main-button {
+margin-top: 30px;
+}
+
+.history-item {
+position: relative;
+width: 100%;
+max-width: 600px;
+margin: 0px auto 0;
+}
+
+@media screen and (max-width: 767px) {
+
+section.history .left-content {
+  margin-bottom: 45px;
+}
+
+section.history .first-item .first-content h4,
+section.history .second-item .second-content h4 {
+  text-align: center;
+}
+
+}
+
+.history-item figure {
+position: relative;
+width: 100%;
+font-size: 0;
+}
+.history-item figure img {
+width: 100%;
 }

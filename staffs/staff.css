@@ -808,13 +808,22 @@ section {
     margin-bottom: 10px;
     font-size: 18px;
   }
-
-  .skills .logo-box .meter {
-    margin-left: 25px;
-    line-height: 24px;
-    font-size: 30px;
-    width: 50%;
-
+  .skills .logo-box .progress {
+    margin-left: 95px;
+   
   }
-  
-  
+  .list-inline-item {
+    display: inline-block;
+    width: 40px;
+  }
+  .list-inline-item ul li{
+    margin: auto;
+  }
+  .list-inline-item a img{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
+    margin: 5px;
+  }
