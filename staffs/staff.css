@@ -880,3 +880,93 @@ section {
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
     margin: 5px;
   }
+  footer{
+    box-shadow: 8px 0 0 0 #ffc01d;
+    border-top: 3px solid #ffc01d;
+  }
+  .footer-head{
+    border-left: 5px solid #ffc01d;
+    padding-left: 10px;
+    width: fit-content;
+  }
+  .navbar, footer{
+    background-color:#3096e9;
+  }
+  .myexperties .container{
+    padding-bottom:0 ;
+  }
+  .expertiesico {
+    padding:70px 33px 70px 0;
+    text-align: left;
+    font-size:20px;
+    line-height:28px;
+    color:#5b4c5c;
+  }
+  .expertiesdesc {
+    border-left:2px solid #ada5ad;
+    padding:0 0 0 39px;
+    margin-bottom:70px;
+  }
+  .expertiesdesc p {
+    padding-bottom:0;
+  }
+  .expertiesdesc h4 {
+    font-size:14px;
+    font-weight:600;
+    line-height:normal;
+    text-transform:uppercase;
+    letter-spacing:2px;
+  }
+  .expertiesdesc h5 {
+    color:#5b4c5c;
+    font-size:18px;
+    font-style:italic;
+    font-weight:400;
+  }
+  .timeline-wrapper {
+    position: relative;
+    padding: 15px 0;
+  }
+  .timeline-wrapper:last-child:before {
+    height: 0;
+  }
+  .timeline-wrapper:before {
+    content: "";
+    width: 3px;
+    height: 100%;
+    position: absolute;
+  }
+  
+  .timeline-yr {
+    border-radius: 100%;
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    line-height: 75px;
+    text-align: center;
+  }
+  .timeline-yr span {
+    font-size: 16px;
+    font-weight: bold;
+    display: block;
+    line-height: 75px;
+  }
+  
+  .timeline-info {
+    display: inline-block;
+    vertical-align: top;
+  }
+  .timeline-info h3{
+    font-size: 24px;
+    color:#050505;
+    font-weight: 300;
+  }
+  .timeline-info small {
+    color: #2c2c2cb4;
+    font-size: 16px;
+    font-weight: bold;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 15px;
+  }
+  
