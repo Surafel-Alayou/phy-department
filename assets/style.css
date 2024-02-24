@@ -3391,3 +3391,17 @@ width: 100%;
 .profile-detail-block p {
   margin-bottom: 0;
 }
+  .responsive-iframe-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 85%; /* Set to 100% for a square aspect ratio */
+    overflow: hidden;
+  }
+
+  .responsive-iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
