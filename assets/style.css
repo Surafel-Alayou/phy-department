@@ -546,11 +546,6 @@ footer ul{
 a{
   text-decoration: none;
 }
-.header-search{
-  background-color: white;
-  border-radius: 100px;
-  padding: 5px;
-}
 .only-search, .only-search:hover{
   outline: none;
   border: none;
@@ -1575,11 +1570,11 @@ blockquote {
   font-size: 14px;
 }
 
-.laboratories .video-box {
+.laboratories .lab-box {
   position: relative;
 }
 
-.laboratories .video-box img {
+.laboratories .lab-box img {
   padding-top: 15px;
   padding-bottom: 15px;
 }
@@ -1662,7 +1657,7 @@ blockquote {
 }
 .tm-testimonials-box {
   width: 100%;
-  margin: 15px auto 0;
+  margin: 0 auto;
   float: none;
   height: auto;  
 }
@@ -3432,4 +3427,62 @@ width: 100%;
 }
 .published{
   color: rgb(21, 190, 21);
+}
+/* Dropdown options styling */
+.dropdown-content a {
+  color: black;
+  padding: 8px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Hover effect for dropdown options */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu when the input is focused */
+input:focus + .dropdown-content {
+  display: block;
+}
+#my-search {
+  width: 100%;
+  font-size: 18px;
+  padding: 11px;
+  border: none;
+  outline: none;
+  border-radius: 100px;
+  padding: 10px 10px 10px 20px;
+  background-color: none;
+}
+#my-search:hover, #my-search:focus {
+  border: none;
+  outline: none;
+}
+
+/* Style the navigation menu inside the left column */
+#search-menu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: none; /* Initially hide the list */
+  background-color: #fff; /* Set background color to match search input */
+  border: 1px solid #ddd; /* Add border to match search input */
+  z-index: 3;
+  position: absolute;
+  width: inherit;
+  border-radius: 10px;
+}
+
+#search-menu li a {
+  padding: 12px;
+  text-decoration: none;
+  color: #222222;
+  display: block;
+}
+
+#search-menu li a:hover {
+  background-color: #eee;
+  border: none;
+  border-radius: 10px;
 }

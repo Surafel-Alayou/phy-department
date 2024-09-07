@@ -13,6 +13,8 @@
   <link rel="stylesheet" href="assets/css/bootstrap-icons.css">
   <link rel="stylesheet" href="assets/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css">
+
   
 </head>
 <body>
@@ -34,7 +36,7 @@
               <li><a href="about.html">About</a></li>
               <li class="dropdown"><a href="#"><span>Programs</span> <i class="fa fa-caret-down fa-rotate-270"></i></a>
                 <ul>
-                  <li><a href="bachelor.html">Bachelor</a></li>
+                  <li><a href="undergraduate.html">Undergraduate</a></li>
                   <li><a href="masters.html">Master</a></li>
                   <li><a href="doctorate.html">Doctorate</a></li>
                 </ul>
@@ -61,7 +63,7 @@
           <li class="dropdown"><a href="#"><span>Student</span> <i class="fa fa-caret-down"></i></a>
             <ul>
               <li><a href="student-projects.html">Researches</a></li>
-              <li><a href="books.html">Books</a></li>
+              <li><a href="resources.html">Resources</a></li>
               <li><a href="opportunities.html">Opportunities</a></li>
               <li><a href="exit-exam-practice.html">Exit Exam</a></li>
             </ul>
@@ -75,22 +77,30 @@
   </header>
   
   
-  <div class="home-page-header d-flex align-items-center">
+  <div class="home-page-header d-flex align-items-center" style="position: relative; z-index: 1;">
     <div class="col-10 my-auto mx-auto">
       <div class="col-md-12 mb-4 mt-6 mx-auto">
-        <h1 class="text-white mx-auto text-center">We are physicists</h1>  
+        <h1 class="text-white mx-auto text-center">We are Physicists</h1>  
         <p class="text-white text-center">"If I have seen further, it is by standing on the shoulders of giants." – Isaac Newton</p>
       </div>
-      <div class="col-md-5 header-search mx-auto">
-        <form class="d-flex mx-1 only-search">
-          <input class="only-search-input" type="search" placeholder="Search">
-          <!--
-          <button class="btn my-btn-search" type="submit">Search</button>
-          -->
-        </form>
+      <div class="col-md-5 mx-auto">
+        <div class="left" style="position: relative;">
+          <input type="text" id="my-search" onkeyup="filterFunction()" onclick="showMenu()" onblur="hideMenu()" placeholder="Search.." title="Type in a category" style="z-index: 2; width: 100%;">
+          <ul id="search-menu" onmouseleave="hideMenu()" style="position: absolute; z-index: 3; background-color: #fff; width: 100%; min-width: 100%; border: 1px solid #ddd; display: none;">
+            <li><a href="https://ethiocoders.et/">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="#">JavaScript</a></li>
+            <li><a href="#">PHP</a></li>
+            <li><a href="#">Python</a></li>
+            <li><a href="#">jQuery</a></li>
+            <li><a href="#">SQL</a></li>
+            <li><a href="#">Bootstrap</a></li>
+            <li><a href="#">Node.js</a></li>
+          </ul>
+        </div>
       </div>
     </div>  
-  </div>  
+  </div>
   
   <div class="section left-heading col-lg-4 col-md-7 col-10 head shadow">
     <div class="container ">
@@ -200,7 +210,7 @@
                   </div>
                   <div class="col-6">
                     <div class="count-area-content">
-                      <div class="count-digit">1</div>
+                      <div class="count-digit">2</div>
                       <div class="count-title">Professors</div>
                     </div>
                   </div>
@@ -231,7 +241,7 @@
             <div class="row gy-4">        
               <div class="col-lg-7">
                 <iframe id="myframefriday" src="seminar/friday-iframe.html" frameborder="0" scrolling="no" ></iframe>
-                <a href="" style="font-size: 18px; font-weight: 500;" id="linktoattend"><i class="fa fa-external-link"></i>&nbsp;Link to attend</a>
+                <a href="" style="font-size: 18px; font-weight: 500;" id="linktoattend"><i class="fa fa-video-camera" aria-hidden="true"></i>&nbsp;Link to attend</a>
               </div>
               
               <div class="col-lg-5">
@@ -505,7 +515,7 @@
                 <a href="books.html">
                   <div class="icon-box" data-aos="fade-up">
                     <div class="icon"><a href="books.html"><img src="assets/images/book.png" alt="" width="150"></div></a><br>
-                    <h4 class="title"><a href="books.html" class="text-dark">Books</a></h4>
+                    <h4 class="title"><a href="books.html" class="text-dark">Resources</a></h4>
                     <p><a href="books.html">We have commonly used book availiable for download. </a></p>
                     
                   </div>
@@ -527,7 +537,7 @@
                 <a href="exit-exam-practice.html">
                   <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
                     <div class="icon"><img src="assets/images/exam.png" alt="" width="170"></div><br>
-                    <h4 class="title"><a href="exit-exam-practice.html" class="text-dark">Exit exam</a></h4>
+                    <h4 class="title"><a href="exit-exam-practice.html" class="text-dark">National exams</a></h4>
                     <p><a href="exit-exam-practice.html">We have the MoC exit exams prepared by MoE from year 2015 to now.</a></p>
                   </div>
                 </a>
@@ -713,10 +723,9 @@
         </script>
         
         <script src="assets/js/bootstrap.bundle.js"></script>
-        
+        <script src="assets/js/home-search.js"></script>
         <script src="assets/js/main.js"></script>
         <script src="assets/js/seminars.js"></script>
         
       </body>
-      <!---->
       </html>
