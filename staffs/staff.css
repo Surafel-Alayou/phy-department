@@ -490,7 +490,11 @@ a, a:hover, a:focus {
   z-index: 999;
   transition: all 0.3s;
   box-shadow: 1px 1px 4px rgba(184, 184, 185, 0.622);
- 
+}
+#sidebar ul.components li {
+  border-left: 5px solid #ffc01d;
+  margin-bottom: 10px;
+  margin-left: 2px;
 }
 #content, #sidebar{
   margin-top: 90px;
@@ -889,6 +893,24 @@ section {
     padding-left: 10px;
     width: fit-content;
   }
+  @media (max-width: 575px) {
+    #footer .footer-top .footer-info {
+      margin: -20px 0 30px 0;
+    }
+  }
+  .footer-info {
+    width: 100%; /* Ensure it covers full width */
+    height: 100%; /* Adjust as necessary */
+    position: relative; /* If needed for positioning */
+    border-radius: 5px;
+  }
+  
+  .footer-info iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    border: 0; /* Removes the default border */
+  }
   .navbar, footer{
     background-color:#3096e9;
   }
@@ -896,16 +918,16 @@ section {
     padding-bottom:0 ;
   }
   .expertiesico {
-    padding:70px 33px 70px 0;
+    padding:30px auto;
     text-align: left;
     font-size:20px;
     line-height:28px;
-    color:#5b4c5c;
+    margin-bottom: 20px;
   }
   .expertiesdesc {
     border-left:2px solid #ada5ad;
     padding:0 0 0 39px;
-    margin-bottom:70px;
+    margin-bottom:40px;
   }
   .expertiesdesc p {
     padding-bottom:0;
@@ -918,7 +940,6 @@ section {
     letter-spacing:2px;
   }
   .expertiesdesc h5 {
-    color:#5b4c5c;
     font-size:18px;
     font-style:italic;
     font-weight:400;
@@ -946,10 +967,10 @@ section {
     text-align: center;
   }
   .timeline-yr span {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
     display: block;
-    line-height: 75px;
+    line-height: 70px;
   }
   
   .timeline-info {
@@ -957,13 +978,11 @@ section {
     vertical-align: top;
   }
   .timeline-info h3{
-    font-size: 24px;
-    color:#050505;
+    font-size: 18px;
     font-weight: 300;
   }
   .timeline-info small {
-    color: #2c2c2cb4;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
     display: inline-block;
     vertical-align: middle;
