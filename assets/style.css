@@ -3745,9 +3745,7 @@ p.center-date {
   color: #FCB150;
   font-size: inherit;
 }
-/**************************
-BAR-CHART
-**************************/
+
 .grafico.bar-chart {
   background: #3468AF;
   padding: 0 1rem 2rem 1rem;
@@ -3814,8 +3812,18 @@ BAR-CHART
   background: #15BFCC;  
   height: 520%;
 }
-/*****************************
-USO NÚMEROS MÁGICOS EN ALGUNOS VALORES
-POR NO PARARME A ESTUDIAR A FONDO
-EL CSS DEL PEN ORIGINAL
-*****************************/
+.nav-pills .nav-item .active {
+  border-bottom: 2px solid var(--primary);
+}
+
+.job-item {
+  border: 1px solid transparent;
+  border-radius: 2px;
+  box-shadow: 0 0 45px rgba(0, 0, 0, .08);
+  transition: .5s;
+}
+
+.job-item:hover {
+  border-color: rgba(0, 0, 0, .08);
+  box-shadow: none;
+}
