@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:image" content="../assets/images/og-image.png" />
+  <meta content="Explore physics at Bahir Dar University. Discover research and academic programs in our dynamic Physics Department." name="description">
+  <title>AMSE lab</title>
+  <meta property="og:title" content="Department of Physics" />
+  <meta property="og:site_name" content="Department of Physics" />
+  <link rel="icon" href="../assets/images/favicon.png"/>
+  <link rel="stylesheet" href="../assets/css/bootstrap.css">
+  <link rel="stylesheet" href="../assets/css/bootstrap-icons.css">
+  <link rel="stylesheet" href="laboratories.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+  <div id="mypreloader">
+    <img src="../assets/images/rocket.gif" alt="preloader image" width="100" height="100">
+  </div>
+  <header id="header" class="header d-flex align-items-center">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+      <a class="navbar-brand d-flex align-items-center mx-3" href="../index.html" >
+        <img class="navbar-brand-image img-fluid" src="../assets/images/bahir_dar_university_logo.png" width="60" height="60"
+        alt="BDU logo">
+      </a>
+      <a class="navbar-brand text-white" href="../index.html" >Department of Physics</a>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li class="dropdown"><a href="#"><span>Department</span> <i class="fa fa-caret-down"></i></a>
+            <ul>
+              <li><a href="../about.html">About</a></li>
+              <li class="dropdown"><a href="#"><span>Programs</span> <i class="fa fa-caret-down fa-rotate-270"></i></a>
+                <ul>
+                  <li><a href="../undergraduate.html">Undergraduate</a></li>
+                  <li><a href="../masters.html">Master</a></li>
+                  <li><a href="../doctorate.html">Doctorate</a></li>
+                </ul>
+              </li>
+              <li><a href="../the-head.html">The Head</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>Pages</span> <i class="fa fa-caret-down"></i></a>
+            <ul>
+              <li><a href="../announcement.html">Announcement</a></li>
+              <li><a href="../laboratories.html">Laboratories</a></li>
+              <li><a href="../seminar-archive.html">Seminars</a></li>
+              <li><a href="../news.html">News</a></li>
+              <li><a href="../events.html">Events</a></li>
+            </ul>
+          </li>
+          <li><a href="../staffs/staff-grid.html">Staff</a></li>
+          <li class="dropdown"><a href="#"><span>College</span> <i class="fa fa-caret-down"></i></a>
+            <ul>
+              <li><a href="../college-announcement.html">Announcement</a></li>
+              <li><a href="../calendar.html">Academic Calendar</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>Student</span> <i class="fa fa-caret-down"></i></a>
+            <ul>
+              <li><a href="../student-projects.html">Researches</a></li>
+              <li><a href="../resources.html">Resources</a></li>
+              <li><a href="../opportunities.html">Opportunities</a></li>
+              <li><a href="../national-exams.html">National Exams</a></li>
+            </ul>
+          </li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+      
+    </div>
+  </header>
+  
+  <!-- Full-Width Subheader Below Main Header -->
+  <div id="subheader" class="subheader d-flex align-items-center">
+    <h2 class="text-white">Advanced Material and Solar Energy Lab (AMSE)</h2>
+  </div>
+  
+  <nav id="sidebar">
+    <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+      <!-- Tabs -->
+      <button class="side-items active" id="v-pills-overview-tab" data-bs-toggle="pill" 
+      data-bs-target="#v-pills-overview" type="button" role="tab" 
+      aria-controls="v-pills-overview" aria-selected="true">Overview</button>
+      <button class="side-items" id="v-pills-research-tab" data-bs-toggle="pill" 
+      data-bs-target="#v-pills-research" type="button" role="tab" 
+      aria-controls="v-pills-research">Research</button>
+    </div>
+    
+    <!-- Accordion -->
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item" style="background: none;">
+        <button class="accordion-button collapsed" type="button" id="team-button" 
+        data-bs-toggle="collapse" data-bs-target="#collapseTeam" aria-expanded="false" 
+        aria-controls="collapseTeam">
+        Team&nbsp;<i class="fa fa-caret-down" id="team-arrow"></i>
+      </button>
+      
+      <div id="collapseTeam" class="accordion-collapse collapse" aria-labelledby="headingOne" 
+      data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <div class="nav flex-column nav-pills me-3" id="v-pills-team-tablist" role="tablist" aria-orientation="vertical">
+          <button class="side-items" id="v-pills-home-team-tab" data-bs-toggle="pill" 
+          data-bs-target="#v-pills-home-team" type="button" role="tab" 
+          aria-controls="v-pills-home-team">PI</button>
+          <!--
+          <button class="side-items" id="v-pills-profile-team-tab" data-bs-toggle="pill" 
+          data-bs-target="#v-pills-profile-team" type="button" role="tab" 
+          aria-controls="v-pills-profile-team">Masters students</button>
+          -->
+          <button class="side-items" id="v-pills-messages-team-tab" data-bs-toggle="pill" 
+          data-bs-target="#v-pills-messages-team" type="button" role="tab" 
+          aria-controls="v-pills-messages-team">PhD students</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+  <button class="side-items" id="v-pills-facilities-tab" data-bs-toggle="pill" 
+  data-bs-target="#v-pills-facilities" type="button" role="tab" 
+  aria-controls="v-pills-facilities">Facilities and equipment</button>
+  <button class="side-items" id="v-pills-publications-tab" data-bs-toggle="pill" 
+  data-bs-target="#v-pills-publications" type="button" role="tab" 
+  aria-controls="v-pills-publications">Recent publications</button>
+  <button class="side-items" id="v-pills-regulations-tab" data-bs-toggle="pill" 
+  data-bs-target="#v-pills-regulations" type="button" role="tab" 
+  aria-controls="v-pills-regulations">Regulations</button>
+</div>
+</nav>
+
+<div id="content">
+  <nav class="navbar-staff">
+    <div class="container-fluid">
+      <div class="navbar-staff-header">
+        <button type="button" id="sidebarstaffCollapse" class="btn btn-primary mb-4">
+          <i class="fa fa-bars fa-lg"></i>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"></div>
+    </div>
+    <div class="card border-0">
+      <div class="card-body">
+        
+        <!-- Vertical Pills Tabs -->
+        <div class="d-flex align-items-start">
+          <div class="tab-content" id="v-pills-tabContent">
+            <div class="tab-pane fade show active" id="v-pills-overview" role="tabpanel" aria-labelledby="v-pills-overview-tab">
+              <div class="container-xxl wow fadeInUp" data-wow-delay="0.1s">
+                <div class="container">
+                  <div class="row mt-0 gx-4">
+                    <div class="col-lg-8">
+                      <div>
+                        <img src="../assets/images/MPAL.jpg" class="img-fluid shadow rounded" alt="">
+                      </div>
+                      <div class="mb-5 mt-5">
+                        <p>The Advanced Material and Solar Energy Lab (AMSE) was established in 2020 at 
+                          Bahir Dar University. The lab focuses on research in emerging solar cell 
+                          technologies and thin-film materials. It mainly supports condensed matter 
+                          physics students in their studies and research. AMSE is organized and equipped 
+                          to handle various projects and has been supported by funding from ISP, Cambridge 
+                          Alborada, MIF, APS, and the Coimbra Group. The lab continues to grow and contribute 
+                          to research in materials science and renewable energy.  </p>                         
+                        </div>
+                      </div>
+                      
+                      <div class="col-lg-4">
+                        <div class="bg-light rounded p-5 mb-4 wow slideInUp" data-wow-delay="0.1s">
+                          <p><a href="">Washera Geospace and Radar Science Laboratory (WaGRL)</a></p>
+                          <p><a href="">Materials and Nanophotonics Laboratory</a></p>
+                          <p><a href="">Pizeoelectric Effect Laboratory</a></p>                
+                        </div>
+                        
+                        <div class="rounded mb-4" data-wow-delay="0.1s" style="min-height: 400px;">
+                          <iframe src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d3908.699599940113!2d37.39358579238192!3d11.573379469504061!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTHCsDM0JzIzLjQiTiAzN8KwMjMnNDQuMyJF!5e0!3m2!1sen!2set!4v1725715429238!5m2!1sen!2set" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="100%" height="400px"></iframe>             
+                        </div>
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+                
+              </div>
+              <div class="tab-pane fade" id="v-pills-research" role="tabpanel" aria-labelledby="v-pills-research-tab">
+                <div class="container">
+                  <div class="row">
+                    <h4 class="mb-3">Research areas</h4>
+                    <div class="col-md-7 align-self-center">
+                      <p style=" text-align: justify;">The Advanced Material and Solar Energy Lab (AMSE) focuses on research in emerging solar 
+                        cells, material science, surface and interface properties, device performance, device 
+                        stability, and thin-film technologies. Its work on next-generation solar cells, 
+                        such as perovskite and organic photovoltaics, aims to enhance efficiency and scalability. 
+                        The lab explores advanced materials for energy applications, studying their properties 
+                        and interactions at surfaces and interfaces to improve device functionality. Research 
+                        also addresses optimizing device performance and ensuring long-term stability under 
+                        various conditions. Additionally, AMSE works on thin-film deposition techniques to
+                        develop high-quality materials for energy systems. Through these efforts, the lab 
+                        contributes to innovations in renewable energy and sustainable technologies.</p>
+                      </div>
+                      <div class="col-md-5">
+                        <div class="d-flex justify-content-center align-items-center mx-auto">
+                          <img src="../assets/images/phd-condensed.jpg" class="img-fluid mb-4 shadow rounded" alt="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="v-pills-facilities" role="tabpanel" aria-labelledby="v-pills-facilities-tab">
+                  
+                  <section class="amse-lab-instruments section-padding">
+                    <div class="container">
+                      <div class="row">
+                        
+                        <div class="col-lg-4 col-12 mb-4 mb-lg-0">
+                          <a href="instrument/instruments.html">
+                            <div class="lab-instruments lab-instruments-full">
+                              <div class="lab-instruments-image-wrap">
+                                <a href="instrument/instruments.html">
+                                  <img src="../assets/images/keithley-2450.jpg" class="lab-instruments-image img-fluid" alt="">
+                                </a>
+                              </div>
+                              
+                              <div class="lab-instruments-info">
+                                <h5 class="mb-2">
+                                  <a href="instrument/instruments.html">
+                                    Model 2450 Interactive SourceMeter
+                                  </a>
+                                </h5>
+                                
+                                <div class="profile-block d-flex">
+                                  <p class="text-muted">Functional </p>
+                                </div>
+                                
+                                <p class="mb-0">Keithley Instruments products are designed for use with electrical signals that are measurement, control, and data I/O 
+                                  connections, with low transient overvoltages, and must not be directly connected to mains voltage or to voltage sources with high 
+                                  transient overvoltages.</p>
+                                  
+                                  <div class="lab-instruments-bottom d-flex justify-content-between mt-3">
+                                    <strong>User manual</strong><a href="#"><i class="fa fa-file-pdf-o"></i>&nbsp;Read</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                          
+                          <div class="col-lg-4 col-12 mb-4 mb-lg-0">
+                            <div class="lab-instruments lab-instruments-full">
+                              <div class="lab-instruments-image-wrap">
+                                <a href="instrument/instruments.html">
+                                  <img src="../assets/images/drop-shape-analyzer.jpg" class="lab-instruments-image img-fluid" alt="">
+                                </a>
+                              </div>
+                              
+                              <div class="lab-instruments-info">
+                                <h5 class="mb-2">
+                                  <a href="instrument/instruments.html">
+                                    KRUSS drop shape analyzer
+                                  </a>
+                                </h5>
+                                
+                                <div class="profile-block d-flex">
+                                  <p class="text-muted">Functional </p>
+                                </div>
+                                
+                                <p class="mb-0"> The DSA25 is intended only for measurements of the contact angle between a liquid and a 
+                                  solid, the surface tension of liquids as well as the interfacial tension between two liquids.</p>
+                                  
+                                  <div class="lab-instruments-bottom d-flex justify-content-between mt-3">
+                                    <strong>User manual</strong><a href="#"><i class="fa fa-file-pdf-o"></i>&nbsp;Read</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            
+                            <div class="col-lg-4 col-12">
+                              <div class="lab-instruments lab-instruments-full">
+                                <div class="lab-instruments-image-wrap">
+                                  <a href="instrument/instruments.html">
+                                    <img src="../assets/images/four-point-probe.jpg" class="lab-instruments-image img-fluid" alt="">
+                                  </a>
+                                </div>
+                                
+                                <div class="lab-instruments-info">
+                                  <h5 class="mb-2">
+                                    <a href="instrument/instruments.html">
+                                      Four point probe
+                                    </a>
+                                  </h5>
+                                  
+                                  <div class="profile-block d-flex">
+                                    <p class="text-muted">Functional <span></span></p>
+                                  </div>
+                                  
+                                  <p class="mb-0">The primary technique for measuring sheet resistance is the four-probe method (also known as the 
+                                    Kelvin technique), which is performed using a four-point probe. A four-point probe consists of four 
+                                    electrical probes in a line, with equal spacing between each of the probes.</p>
+                                    
+                                    <div class="lab-instruments-bottom d-flex justify-content-between mt-3">
+                                      <strong>User manual</strong><a href="#"><i class="fa fa-file-pdf-o"></i>&nbsp;Read</a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              
+                            </div>
+                          </div>
+                        </section>
+                        
+                      </div>
+                      <div class="tab-pane fade" id="v-pills-home-team" role="tabpanel" aria-labelledby="v-pills-home-team-tab">
+                        <div class="container">
+                          <div class="row">
+                            <div class="col-md-7 align-self-center">
+                              <h3 class="mb-3">Dr. Amare Benor</h3>
+                              <div class="left-content">
+                                <p style=" text-align: justify;">Amare Benor received his PhD in Physics at Jacobs University Bremen, 
+                                  Germany, in 2008. He currently holds a position at Bahir Dar University in 
+                                  Ethiopia. Following on from his PhD study, he has worked on various surface 
+                                  engineering methods to tackle materials stability issues affecting the 
+                                  electronic structure of organic semiconducting and (opto-)electronic devices. 
+                                  In addition, he takes an interest in printing methods and electrodes patterning 
+                                  for applications in emerging optoelectronic devices. His current research, 
+                                  in Ethiopia, is supported by the International Science Program (ISP, IPPS ETH:03).
+                                  During his stay with us at the Sirringhaus group he will continue his work on 
+                                  electrical stability of organic semiconductors, specifically, in connection to 
+                                  their impact on thermoelectronic energy harvesting devices.</p>
+                                </div>
+                              </div>
+                              <div class="col-md-5" >
+                                <div class="d-flex justify-content-center align-items-center">
+                                  <img src="../assets/images/amare-benor.jpg" class="img-fluid mb-4 shadow rounded" alt="">
+                                </div>
+                                
+                                <div class="social-links d-flex text-center mt-3">
+                                  <a href="" class="phone" title="About"><i class="fa fa-user" aria-hidden="true"></i></a>
+                                  <a href="tel:+251 90 629 0706" class="phone" title="+251 94 607 8117"><i class="fa fa-phone"></i></a>
+                                  <a href="mailto:amarebenor@yahoo.com" class="envelope" title="abeneyb@gmail.com"><i class="fa fa-envelope"></i></a>
+                                </div>
+                              </div>
+                            </div>
+                            
+                            <div class="row mt-5 pt-5">                           
+                              <div class="col-md-7 align-self-center">
+                                <h3 class="mb-3">Dr. Getachew Tizazu</h3>
+                                <div class="left-content">
+                                  <p style=" text-align: justify;">Getachew Tizazu received his PhD in Physics at Jacobs University Bremen, 
+                                    Germany, in 2008. He currently holds a position at Bahir Dar University in 
+                                    Ethiopia. Following on from his PhD study, he has worked on various surface 
+                                    engineering methods to tackle materials stability issues affecting the 
+                                    electronic structure of organic semiconducting and (opto-)electronic devices. 
+                                    In addition, he takes an interest in printing methods and electrodes patterning 
+                                    for applications in emerging optoelectronic devices. His current research, 
+                                    in Ethiopia, is supported by the International Science Program (ISP, IPPS ETH:03).
+                                    During his stay with us at the Sirringhaus group he will continue his work on 
+                                    electrical stability of organic semiconductors, specifically, in connection to 
+                                    their impact on thermoelectronic energy harvesting devices.</p>
+                                  </div>
+                                </div>
+                                <div class="col-md-5">
+                                  <div class="d-flex justify-content-center align-items-center">
+                                    <img src="../assets/images/man-placeholder-2.jpg" class="img-fluid mb-4 rounded" alt="">
+                                  </div>
+                                  
+                                  <div class="social-links d-flex text-center mt-3">
+                                    <a href="" class="phone" title="About"><i class="fa fa-user" aria-hidden="true"></i></a>
+                                    <a href="tel:+251 90 629 0706" class="phone" title="+251 94 607 8117"><i class="fa fa-phone"></i></a>
+                                    <a href="mailto:amarebenor@yahoo.com" class="envelope" title="abeneyb@gmail.com"><i class="fa fa-envelope"></i></a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!--
+                          <div class="tab-pane fade" id="v-pills-profile-team" role="tabpanel" aria-labelledby="v-pills-profile-team-tab">
+                            <section id="students">
+                              <div class="container">
+                                <div class="row">
+                                  <div class="col-md-6">
+                                    <div class="student-box">
+                                      <div class="row personal-info">
+                                        <div class="col-md-2 col-xs-2">
+                                          <div class="profile-picture ms-student-profile-one"></div>
+                                        </div>
+                                        <div class="col-md-10 col-xs-10">
+                                          <h6>Tigist Sisay <span class="years"><i class="fa fa-graduation-cap" aria-hidden="true"></i></span></h6>
+                                          <small>Space Physics</small>
+                                        </div>
+                                      </div>
+                                      <p>In euismod, metus ac elementum tincidunt, dui eros ullamcorper lorem, at euismod augue augue quis leo. Fusce non dui augue. In hac habitasse platea dictumst. Mauris quis lacinia mauris. Proin ut pretium quam. Nam at ex finibus.</p>
+                                    </div>
+                                  </div>
+                                  <div class="col-md-6">
+                                    <div class="student-box">
+                                      <div class="row personal-info">
+                                        <div class="col-md-2 col-xs-2">
+                                          <div class="profile-picture ms-student-profile-two"></div>
+                                        </div>
+                                        <div class="col-md-10 col-xs-10">
+                                          <h6>Emebet Wondmnew <span class="years"><i class="fa fa-graduation-cap" aria-hidden="true"></i></span></h6>
+                                          <small>Condensed Matter Physics</small>
+                                        </div>
+                                      </div>
+                                      <p>In euismod, metus ac elementum tincidunt, dui eros ullamcorper lorem, at euismod augue augue quis leo. Fusce non dui augue. In hac habitasse platea dictumst. Mauris quis lacinia mauris. Proin ut pretium quam. Nam at ex finibus.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </section>
+                          </div>
+                           -->
+                          <div class="tab-pane fade" id="v-pills-messages-team" role="tabpanel" aria-labelledby="v-pills-messages-team-tab">
+
+                            <section id="students">
+                              <div class="container">
+                                <div class="row">
+                                  <div class="col-md-6">
+                                    <div class="student-box">
+                                      <div class="row personal-info">
+                                        <div class="col-md-2 col-xs-2">
+                                          <div class="profile-picture student-profile-one"></div>
+                                        </div>
+                                        <div class="col-md-10 col-xs-10">
+                                          <h6>Assaye Gedfew <span class="years">IV</span></h6>
+                                          <small>Condensed Matter Physics</small>
+                                        </div>
+                                      </div>
+                                      <p>Conducting modeling of monocrystalline silicon solar cells to 
+                                        optimize performance and efficiency.</p>
+                                    </div>
+                                  </div>
+                                  <div class="col-md-6">
+                                    <div class="student-box">
+                                      <div class="row personal-info">
+                                        <div class="col-md-2 col-xs-2">
+                                          <div class="profile-picture student-profile-two"></div>
+                                        </div>
+                                        <div class="col-md-10 col-xs-10">
+                                          <h6>Yekitwork Abebe <span class="years">IV</span></h6>
+                                          <small>Condensed Matter Physics</small>
+                                        </div>
+                                      </div>
+                                      <p>Working on perovskite solar cell fabrication to enhance efficiency
+                                         and reduce short-circuit current for improved overall performance.</p>
+                                    </div>
+                                  </div>
+                                  <div class="col-md-6">
+                                    <div class="student-box">
+                                      <div class="row personal-info">
+                                        <div class="col-md-2 col-xs-2">
+                                          <div class="profile-picture student-profile-three"></div>
+                                        </div>
+                                        <div class="col-md-10 col-xs-10">
+                                          <h6>Biniam Ademe <span class="years">III</span></h6>
+                                          <small>Condensed Matter Physics</small>
+                                        </div>
+                                      </div>
+                                      <p>Investigating surface modification and characterization techniques 
+                                        for enhancing materials used in electronic applications.</p>
+                                    </div>
+                                  </div>
+                                  <div class="col-md-6">
+                                    <div class="student-box">
+                                      <div class="row personal-info">
+                                        <div class="col-md-2 col-xs-2">
+                                          <div class="profile-picture student-profile-four"></div>
+                                        </div>
+                                        <div class="col-md-10 col-xs-10">
+                                          <h6>Missalie Simeneh <span class="years">II</span></h6>
+                                          <small>Condensed Matter Physics</small>
+                                        </div>
+                                      </div>
+                                      <p>Developing polymer coatings to enhance metal adhesion, corrosion resistance,
+                                         and aesthetics, with promising results in durability and protection.</p>
+                                    </div>
+                                  </div>
+                                  <div class="col-md-6">
+                                    <div class="student-box">
+                                      <div class="row personal-info">
+                                        <div class="col-md-2 col-xs-2">
+                                          <div class="profile-picture student-profile-five"></div>
+                                        </div>
+                                        <div class="col-md-10 col-xs-10">
+                                          <h6>Mekdes Mengesha <span class="years">II</span></h6>
+                                          <small>Condensed Matter Physics</small>
+                                        </div>
+                                      </div>
+                                      <p>Exploring perovskite solar cell fabrication using a back-contact 
+                                        structure to improve efficiency, stability, and performance.</p>
+                                    </div>
+                                  </div>
+                                  <!--
+                                  <div class="col-md-6">
+                                    <div class="student-box">
+                                      <div class="row personal-info">
+                                        <div class="col-md-2 col-xs-2">
+                                          <div class="profile-picture student-profile-six"></div>
+                                        </div>
+                                        <div class="col-md-10 col-xs-10">
+                                          <h6>Worku Dagne <span class="years">1st</span></h6>
+                                          <small>Condensed Matter Physics</small>
+                                        </div>
+                                      </div>
+                                      <p>In euismod, metus ac elementum tincidunt, dui eros ullamcorper lorem, at euismod augue augue quis leo. Fusce non dui augue. In hac habitasse platea dictumst. Mauris quis lacinia mauris. Proin ut pretium quam. Nam at ex finibus.</p>
+                                    </div>
+                                  </div>
+                                -->
+                                  <!--
+                                  <div class="col-md-6">
+                                    <div class="student-box">
+                                      <div class="row personal-info">
+                                        <div class="col-md-2 col-xs-2">
+                                          <div class="profile-picture student-profile-seven"></div>
+                                        </div>
+                                        <div class="col-md-10 col-xs-10">
+                                          <h6>Segenet Dagmawi <span class="years">1st</span></h6>
+                                          <small>Condensed Matter Physics</small>
+                                        </div>
+                                      </div>
+                                      <p>In euismod, metus ac elementum tincidunt, dui eros ullamcorper lorem, at euismod augue augue quis leo. Fusce non dui augue. In hac habitasse platea dictumst. Mauris quis lacinia mauris. Proin ut pretium quam. Nam at ex finibus.</p>
+                                    </div>
+                                  </div>
+                                -->
+                                </div>
+                              </div>
+                            </section>
+                            
+                          </div>
+                          <div class="tab-pane fade" id="v-pills-publications" role="tabpanel" aria-labelledby="v-pills-publications-tab">
+                            
+                            <section id="projects" class="projects section-bg">
+                              <div class="container" data-aos="fade-up">
+                                <h4 class="mb-4">Recent publications</h4>
+                                <ul class="projects-list" data-aos="fade-up" data-aos-delay="100">
+                                  <li>
+                                    <div data-bs-toggle="collapse" class="collapsed question" href="#projects1">
+                                      Effect of orange fruit peel extract concentration on the synthesis of zinc oxide nanoparticles
+                                      <br>
+                                      <p class="num-thesis">
+                                        2024 | Analytical Science Advances
+                                      </p>
+                                    </div>
+                                    <div id="projects1" class="collapse" data-bs-parent=".projects-list">
+                                      <div class="title-details">
+                                        <div class="container">
+                                          
+                                          <div class="main-content" style="box-shadow: none; padding: 0;">
+                                            <div class="mx-auto text-center">
+                                              <h5>Abstract</h5>
+                                            </div>
+                                            <p>In this investigation, the impact of reducing agent concentration 
+                                              on the synthesis of zinc oxide nanoparticles (ZnO NPs) was examined. 
+                                              During the synthesis, an assessment of ionic conductivity was carried 
+                                              out, revealing a significant increase in conductivity prior to the 
+                                              introduction of the reducing agent, followed by a sharp decrease upon 
+                                              its addition. Characterization of the ZnO NPs involved 
+                                              ultraviolet-visible spectroscopy, scanning electron microscopy, 
+                                              Fourier-transform infrared spectroscopy, and, X-ray diffraction 
+                                              analysis. The outcomes suggest that the characteristics of the ZnO 
+                                              NPs are influenced by the concentration of the reducing agent during 
+                                              the synthesis process. Notably, the ZnO NPs synthesized with a higher
+                                              concentration of reducing agent exhibited a narrower optical band gap
+                                              and increased surface energy. Furthermore, employing a concentration
+                                              of 0.5 v/v resulted in the rapid production of NPs with relatively 
+                                              uniform sizes. Conversely, concentrations below 0.5 v/v lead to slow 
+                                              formation, while concentrations exceeding 0.5 v/v yielded 
+                                              non-uniform NPs.
+                                            </p>
+                                            <br><br>
+                                            <div class="row">
+                                              <div class="item">
+                                                <p>DOI: <a href="https://doi.org/10.1002/ansa.202400023">https://doi.org/10.1002/ansa.202400023</a></p>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <br>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </li>
+                                  
+                                  <li>
+                                    <div data-bs-toggle="collapse" class="collapsed question" href="#projects2">
+                                      Factors influencing surface coverage and structural organization of phosphonic acid self-assembled monolayers on zinc oxide
+                                      <br>
+                                      <p class="num-thesis">
+                                        2024 | Applied Physics A
+                                      </p>
+                                    </div>
+                                    <div id="projects2" class="collapse" data-bs-parent=".projects-list">
+                                      <div class="title-details">
+                                        <div class="container">
+                                          
+                                          <div class="main-content" style="box-shadow: none; padding: 0;">
+                                            <div class="mx-auto text-center">
+                                              <h5>Abstract</h5>
+                                            </div>
+                                            <p>This study investigates the effects of solvent type, ODPA 
+                                              concentration, and solution temperature on the growth, surface 
+                                              coverage, and structural order of n-octadecylphosphonic acid 
+                                              (ODPA) self-assembled monolayers (SAMs) on zinc oxide (ZnO) 
+                                              surfaces. We explore the impacts of isopropanol and ethanol
+                                              as solvents, considering their differing dielectric constants
+                                              and lower toxicity compared to non-polar alternatives like 
+                                              toluene. The results indicate that ODPA SAMs formed more 
+                                              rapidly in isopropanol, with a growth rate of 0.7% per minute, 
+                                              compared to 0.2% per minute in ethanol. However, ethanol 
+                                              resulted in slightly higher surface coverage (97%) than 
+                                              isopropanol (96%). Moreover, increasing the ODPA concentration 
+                                              from 0.03 to 0.14 mM enhanced surface coverage; however, further 
+                                              increases in concentration did not lead to a corresponding
+                                              increase in SAM coverage due to molecular interactions. 
+                                              The solution temperature also significantly influenced the 
+                                              growth rate of the SAM, with temperatures rising from 30 to
+                                              60 °C enhancing growth. However, higher temperatures 
+                                              (above 60 °C) affected the SAM structure, leading to defects 
+                                              in the monolayer. This study provides a comprehensive
+                                              understanding of how solvent type, concentration, and 
+                                              solution temperature influence SAM formation, offering 
+                                              valuable insights for optimizing deposition conditions to 
+                                              enhance device performance in optoelectronic applications.
+                                            </p>
+                                            <br><br>
+                                            <div class="row">
+                                              <div class="item">
+                                                <p>DOI: <a href="https://doi.org/10.1007/s00339-024-08006-4">https://doi.org/10.1007/s00339-024-08006-4</a></p>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <br>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </li>
+                                </ul>
+                              </div>
+                            </section>
+                            
+                          </div>
+                          
+                          <div class="tab-pane fade" id="v-pills-regulations" role="tabpanel" aria-labelledby="v-pills-regulations-tab">
+                            <h4 class="mb-3">Regulations</h4>
+                            <ul>
+                              <li><strong>Access Policy:</strong> 
+                                <ul>
+                                  <li>Only authorized personnel and students with approval are allowed to enter the lab.</li>
+                                  <li>Visitors must seek permission from the lab coordinator or supervisor before entering.</li>
+                                </ul>
+                              </li>
+                              <li><strong>Safety Measures:</strong>
+                                <ul>
+                                  <li>Lab users must wear appropriate safety gear, including gloves, goggles, and lab coats.</li>
+                                  <li>Report any accidents or hazards immediately to the lab supervisor.</li>
+                                  <li>Ensure proper handling and disposal of chemicals and hazardous materials.</li>
+                                </ul>
+                              </li>
+                              <li><strong>Equipment Usage:</strong>
+                                <ul>
+                                  <li>Operate lab equipment only after receiving proper training or guidance.</li>
+                                  <li>Do not remove or modify any equipment without prior approval.</li>
+                                  <li>Clean and return equipment to its designated place after use.</li>
+                                </ul>
+                              </li>
+                              <li><strong>Data Management:</strong>
+                                <ul>
+                                  <li>Document all experiments, results, and observations systematically in the provided lab records.</li>
+                                  <li>Backup digital data regularly to prevent loss of research data.</li>
+                                  <li>Maintain confidentiality of unpublished research findings.</li>
+                                </ul>
+                              </li>
+                              <li><strong>Environmental Responsibility:</strong>
+                                <ul>
+                                  <li>Conserve resources by minimizing waste and reusing materials where possible.</li>
+                                  <li>Switch off equipment, lights, and power outlets when not in use.</li>
+                                </ul>
+                              </li>
+                              <li><strong>Code of Conduct:</strong>
+                                <ul>
+                                  <li>Maintain a professional and respectful environment in the lab.</li>
+                                  <li>Follow all instructions provided by lab supervisors or coordinators.</li>
+                                  <li>Unauthorized experiments or activities are strictly prohibited.</li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        
+                      </div>
+                      <!-- End Vertical Pills Tabs -->
+                    </div>
+                  </div>
+                </nav>
+              </div>
+              
+              <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+              <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+              <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+              <script>
+                var loader = document.getElementById("mypreloader");
+                window.addEventListener("DOMContentLoaded", function() {
+                  loader.style.display = "none";
+                });
+                
+              </script>
+              <script type="text/javascript">
+                $(document).ready(function () {
+                  $('#sidebarstaffCollapse').on('click', function () {
+                    $('#sidebar, #content').toggleClass('active');
+                    
+                  });
+                });
+              </script>
+              <script>
+                document.getElementById("run-button").addEventListener("click", function() {
+                  var result = document.getElementById("result").contentWindow.document;
+                  result.open();
+                  result.write(editor.getValue());
+                  result.close();
+                });
+                
+              </script>
+              
+              <script src="../assets/js/bootstrap.bundle.js"></script>
+              <script src="../assets/js/main.js"></script>
+              <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+              <script>
+                AOS.init();
+              </script>
+              <script>
+                // Ensure only one sidebar button is active at a time
+                document.querySelectorAll('.side-items').forEach(button => {
+                  button.addEventListener('click', function() {
+                    // Remove 'active' class and aria-selected from all sidebar items
+                    document.querySelectorAll('.side-items').forEach(item => {
+                      item.classList.remove('active');
+                      item.setAttribute('aria-selected', 'false');
+                    });
+                    
+                    // Add 'active' class and aria-selected to the clicked button
+                    this.classList.add('active');
+                    this.setAttribute('aria-selected', 'true');
+                  });
+                });
+                
+                // Ensure only one accordion item is expanded at a time
+                document.querySelectorAll('.accordion-button').forEach(button => {
+                  button.addEventListener('click', function() {
+                    // If the button is collapsed, open it
+                    if (this.classList.contains('collapsed')) {
+                      // Collapse all other accordion items
+                      document.querySelectorAll('.accordion-button').forEach(item => {
+                        item.classList.add('collapsed');
+                      });
+                      
+                      // Remove the 'collapsed' class from the clicked button
+                      this.classList.remove('collapsed');
+                    }
+                  });
+                });
+              </script>
+              <script>
+                // Get all the sidebar tabs
+                const tabs = document.querySelectorAll('#v-pills-tab .side-items');
+                
+                // Get the "Team" accordion collapse element
+                const teamCollapse = document.getElementById('collapseTeam');
+                
+                // Add event listeners to the tabs
+                tabs.forEach(tab => {
+                  tab.addEventListener('click', () => {
+                    // Collapse the "Team" section when any other tab is clicked
+                    if (teamCollapse.classList.contains('show')) {
+                      const collapse = new bootstrap.Collapse(teamCollapse, {
+                        toggle: true
+                      });
+                      collapse.hide();
+                    }
+                  });
+                });
+                
+              </script>
+              <script>
+                document.addEventListener('DOMContentLoaded', () => {
+                  const teamButton = document.getElementById('team-button');
+                  const teamArrow = document.getElementById('team-arrow');
+                  
+                  teamButton.addEventListener('click', () => {
+                    if (teamButton.getAttribute('aria-expanded') === 'true') {
+                      teamArrow.classList.remove('fa-caret-down');
+                      teamArrow.classList.add('fa-caret-up');
+                    } else {
+                      teamArrow.classList.remove('fa-caret-up');
+                      teamArrow.classList.add('fa-caret-down');
+                    }
+                  });
+                });
+              </script>     
+              <script>
+                document.addEventListener('DOMContentLoaded', () => {
+                  if ('scrollRestoration' in history) {
+                    history.scrollRestoration = 'manual';
+                  }
+                  window.scrollTo(0, 0);
+                });
+              </script>
+              <script>
+                document.addEventListener('DOMContentLoaded', () => {
+                  const tabButtons = document.querySelectorAll('#v-pills-tab .side-items');
+                  const accordionButtons = document.querySelectorAll('#v-pills-team-tablist .side-items');
+                  
+                  // Restore the active tab from localStorage
+                  const activeTabId = localStorage.getItem('activeTab');
+                  if (activeTabId) {
+                    const activeTab = document.getElementById(activeTabId);
+                    if (activeTab) {
+                      activeTab.click(); // Programmatically activate the stored tab
+                    }
+                  }
+                  
+                  // Save the active tab to localStorage
+                  const saveActiveTab = (event) => {
+                    localStorage.setItem('activeTab', event.target.id);
+                  };
+                  
+                  // Add event listeners to all tab buttons
+                  tabButtons.forEach((button) => {
+                    button.addEventListener('click', saveActiveTab);
+                  });
+                  
+                  accordionButtons.forEach((button) => {
+                    button.addEventListener('click', saveActiveTab);
+                  });
+                });
+              </script>
+              
+              
+            </body>
+            </html>
