@@ -1,5 +1,7 @@
 # Bahir Dar University Physics Department Website
 
+**Link:** https://surafel-alayou.github.io/phy-department/
+
 ## Overview
 
 The **Bahir Dar University Physics Department Website** is an online platform developed to strengthen the department's digital presence and provide a central source of information for students, academic staff, prospective applicants, and visitors.
